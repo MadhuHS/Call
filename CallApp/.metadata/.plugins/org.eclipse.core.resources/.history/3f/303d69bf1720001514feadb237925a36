@@ -1,0 +1,31 @@
+package com.example.qcaller;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MainActivity extends Activity 
+{
+	
+	Button readdatabutton;
+	@Override
+    protected void onCreate(Bundle savedInstanceState) 
+	{
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        readdatabutton=(Button) findViewById(R.id.readexcelbutton);
+    }
+
+	
+	
+	void readExcelData(View view)
+	{
+		Toast.makeText(getApplication(), "Clicked",Toast.LENGTH_SHORT).show();
+	}
+
+}
+    
+
